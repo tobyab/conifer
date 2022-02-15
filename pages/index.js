@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Header from './header'
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+    <Header></Header>
+
       <main className={styles.main}>
         <h1 className={styles.title}>
         Wolfgang Mozart
@@ -20,14 +23,6 @@ export default function Home() {
           Music composer.
         </p>
 
-        <div className={styles.links}>
-          <p>
-          <a href="/about">About</a> ∙ &nbsp;
-          <a href="/projects">Projects</a> ∙ &nbsp;
-          <a href="/contact">Contact</a>
-          </p>
-        </div>
-
           <div className={styles.imageContainer}>
           <Image className={styles.me} src="/mozart.jpeg" alt="This is me." width="100%" height="100%" layout="responsive" objectFit="contain" />
         </div>
@@ -36,3 +31,13 @@ export default function Home() {
     </div>
   )
 }
+
+/*
+ <div className={styles.links}>
+          <p>
+          <a href="/about">About</a> ∙ &nbsp;
+          <a href="/projects">Projects</a> ∙ &nbsp;
+          <a href="/contact">Contact</a>
+          </p>
+        </div>
+*/

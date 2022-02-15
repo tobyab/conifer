@@ -1,0 +1,7 @@
+.links {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    font-size: 1.2rem;
+    transform: translate(-50%, 0);
+  }
