@@ -5,7 +5,7 @@
 .title {
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 57%;
   transform: translate(0, -50%);
   width: 750px;
   font-size: 5rem;
@@ -14,15 +14,20 @@
 .description {
   position: absolute;
   top: 56%;
-  left: 60%;
+  left: 57%;
   width: 550px;
   transform: translate(0, -50%);
   font-size: 1.5rem;
 }
 
+.description code {
+  background-color: rgba(199, 199, 199, 0.509);
+  border-radius: 2vh;
+}
+
 .imageContainer {
   position: absolute;
-  left: 2%;
+  left: 5%;
   top: 50%;
   transform: translate(0, -50%);
   width: 80vh !important;
@@ -35,4 +40,8 @@
   left: 50%;
   font-size: 1.2rem;
   transform: translate(-50%, 0);
+}
+
+.logo {
+  font-size: 20rem;
 }

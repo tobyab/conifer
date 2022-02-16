@@ -15,16 +15,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        Wolfgang Mozart
+        Welcome to conifer!
         </h1>
+    <div className={styles.imageContainer}>
+      <Image src="/conifer.png" alt="Evergreen tree" width="100%" height="100%" layout="responsive" objectFit="contain" />
+    </div>
 
         <p className={styles.description}>
-          Music composer.
+          Navigate to <code>pages/index.js</code> to edit this page.
         </p>
 
-          <div className={styles.imageContainer}>
-          <Image className={styles.me} src="/mozart.jpeg" alt="This is me." width="100%" height="100%" layout="responsive" objectFit="contain" />
-        </div>
+          
         
         </main>
     </div>

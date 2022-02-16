@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from './header'
 import title from '../styles/Title.module.css'
 import styles from '../styles/Contact.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
             <a href="mailto:mail.toby@icloud.com">
                 <p className={styles.emailAddress}>mail.toby@icloud.com</p>
                 <h1 className={styles.mail}>Email</h1>
-                <p className={styles.mailDescription}>Email is the perfect way to get in contact. So, here's mine.</p>
+                <p className={styles.mailDescription}>Email is the perfect way to get in contact. So, here&apos;s mine.</p>
             </a>
         </div>
 
@@ -41,7 +41,7 @@ export default function Home() {
             <a href="https://twitter.com/developedbytoby">
                 <p className={styles.twitterUsername}>@DevelopedByToby</p>
                 <h1 className={styles.twitterName}>Twitter</h1>
-                <p className={styles.twitterDescription}>This is just a placeholder, my DMs aren't actually open.</p>
+                <p className={styles.twitterDescription}>This is just a placeholder, my DMs aren&apos;t actually open.</p>
             </a>
         </div>
 
