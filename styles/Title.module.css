@@ -12,3 +12,9 @@
     width: 450px;
     font-size: 2.5vh;
 }
+
+.subtitle code {
+    background-color: rgba(199, 199, 199, 0.509); 
+    border-radius: 1vh;
+    font-size: 2vh
+}
