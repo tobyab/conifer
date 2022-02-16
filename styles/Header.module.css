@@ -1,7 +1,16 @@
 .links {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    font-size: 1.2rem;
-    transform: translate(-50%, 0);
-  }
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  font-size: 1.2rem;
+  transform: translate(-50%, 0);
+}
+
+.notice {
+  font-size: 1.5vh;
+  color: #00000074;
+  position: absolute;
+  top: 1390%;
+  left: 310%;
+  width: 340px
+}

@@ -10,6 +10,16 @@
     width: 425px;
 }
 
+.email a:hover{
+    opacity: 1 !important;
+}
+
+.emailAddress {
+    position: absolute;
+    top: 15%;
+    left: 32%
+}
+
 .discord {
     position: absolute;
     top: 65%;
@@ -36,4 +46,8 @@
     position: absolute;
     top: 15%;
     left: 32%
+}
+
+.twitter a:hover{
+    opacity: 1 !important;
 }
