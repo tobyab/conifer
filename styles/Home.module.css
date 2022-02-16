@@ -20,9 +20,22 @@
   font-size: 1.5rem;
 }
 
-.description code {
-  background-color: rgba(199, 199, 199, 0.509);
-  border-radius: 2vh;
+.description code { 
+  background-color: rgba(199, 199, 199, 0.509); 
+  border-radius: 1vh;
+}
+
+.help {
+  position: absolute;
+  top: 61%;
+  left: 57%;
+  transform: translate(0, -50%);
+  font-size: 1rem;
+}
+
+.help a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .imageContainer {

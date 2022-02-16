@@ -20,9 +20,10 @@ export default function Home() {
         </h1>
 
         <p className={title.subtitle}>
-          Like my work or just want to chat? Let's get in contact.
+          Like my work or just want to chat? Let&apos;s get in contact.
         </p>
 
+    <div className={styles.options}>
         <div className={styles.email}>
             <a href="mailto:mail.toby@icloud.com">
                 <p className={styles.emailAddress}>mail.toby@icloud.com</p>
@@ -44,6 +45,7 @@ export default function Home() {
                 <p className={styles.twitterDescription}>This is just a placeholder, my DMs aren&apos;t actually open.</p>
             </a>
         </div>
+    </div>
 
         </main>
     </div>

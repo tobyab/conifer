@@ -51,7 +51,7 @@ function RenderResults() {
           <div
             style={{
               background: active ? "#eee" : "rgba(255, 255, 255, 0.98)" ,
-              padding: "1rem 1.5rem",
+              padding: "1.25rem 1.5rem",
               boxShadow: "var(--shadow)",
               //borderLeft: `3px solid ${active ? "transparent" : "transparent"}`,
               alignItems: "center",
@@ -88,7 +88,7 @@ function MyApp({ Component, pageProps }) {
       shortcut: ["r", "h"],
       keywords: "home return h index",
       section: "Navigation",
-      subtitle: "Go to pages/_app.js to edit these!",
+      subtitle: "Go to pages/_app.js to edit this menu!",
       perform: () => window.open("/", "_self"),
     },
     {
@@ -131,6 +131,23 @@ function MyApp({ Component, pageProps }) {
     keywords: "buy coffee donate b m a c d",
     section: "Social",
     perform: () => window.open("https://www.buymeacoffee.com/tobyb", "_blank"),
+  },
+  //help
+  {
+    id: "linkToDocs",
+    name: "Docs",
+    shortcut: ["d", "h"],
+    keywords: "help n d",
+    section: "Need a hand?",
+    perform: () => window.open("https://conifer-docs.notion.site/60bf9d62f5924a32a0a67ca7f25b124a?v=2fd3563198484fb1a94f218a8ffec31b", "_blank"),
+  },
+  {
+    id: "openIssue",
+    name: "Open an issue",
+    shortcut: ["o", "i"],
+    keywords: "o i issue open feedback",
+    section: "Need a hand?",
+    perform: () => window.open("https://github.com/ItsTobez/conifer/issues", "_blank"),
   },
   ];
 
