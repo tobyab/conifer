@@ -1,0 +1,39 @@
+.container {
+    padding: 0 2rem;
+}
+
+.email {
+    position: absolute;
+    top: 50%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 425px;
+}
+
+.discord {
+    position: absolute;
+    top: 65%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 425px;
+}
+
+.discordUsername {
+    position: absolute;
+    top: 15%;
+    left: 32%
+}
+
+.twitter {
+    position: absolute;
+    top: 80%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 425px;
+}
+
+.twitterUsername {
+    position: absolute;
+    top: 15%;
+    left: 32%
+}

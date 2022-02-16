@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from './header'
+import title from '../styles/Title.module.css'
 
 export default function Home() {
   return (
@@ -13,20 +14,9 @@ export default function Home() {
       </Head>
         <Header></Header>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-        Wolfgang Mozart
-        </h1>
+        <h1 className={title.title}>About</h1>
+        <p className={title.subtitle}>This is a small peice of text all about me.</p>
 
-        <p className={styles.description}>
-          Music composer.
-        </p>
-
-          <div className={styles.imageContainer}>
-          <Image className={styles.me} src="/mozart.jpeg" alt="This is me." width="100%" height="100%" layout="responsive" objectFit="contain" />
-        </div>
-        
-        </main>
     </div>
   )
 }

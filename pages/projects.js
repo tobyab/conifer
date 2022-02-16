@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Projects.module.css'
+import title from '../styles/Title.module.css'
+import Header from './header'
 
 export default function Home() {
   return (
@@ -11,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
+        <Header></Header>
 
-    <h1 className={styles.title}>Projects</h1>
-    <p className={styles.subtitle}>I've worked on a few different projects before- here's a list of some of my favourites.</p>
+    <h1 className={title.title}>Projects</h1>
+    <p className={title.subtitle}>I've worked on a few different projects before- here's a list of some of my favourites.</p>
     </body>
     </div>
   )
