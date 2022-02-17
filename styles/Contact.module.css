@@ -1,53 +1,92 @@
-.container {
-    padding: 0 2rem;
+.container { 
+    padding: 0 2rem; 
 }
 
-.email {
-    position: absolute;
-    top: 50%;
-    left: 50% !important;
+.email { 
+    position: absolute; 
+    top: 50%; 
+    left: 50% !important; 
     transform: translate(-50%, -50%);
-    width: 425px;
+    width: 425px; 
 }
 
-.email a:hover{
-    opacity: 1 !important;
+@media only screen and (max-width: 700px) { 
+     .email {
+        left: 50% !important; 
+        width: 330px
+    } 
 }
 
-.emailAddress {
-    position: absolute;
-    top: 15%;
-    left: 32%
+.email a:hover {
+    opacity: 1 !important; 
+}
+  
+.emailAddress { 
+    position: absolute; 
+    top: 15%; 
+    left: 32% 
 }
 
-.discord {
+@media only screen and (max-width: 700px) { 
+    .emailAddress { 
+        left: 40%
+    } 
+} 
+  
+.discord { 
     position: absolute;
     top: 65%;
     left: 50% !important;
     transform: translate(-50%, -50%);
-    width: 425px;
+    width: 425px; 
+} 
+    
+@media only screen and (max-width: 700px) { 
+    .discord { 
+        left: 50% !important; 
+        width: 330px
+    } 
+} 
+
+.discordUsername { 
+    position: absolute; 
+    top: 15%; 
+    left: 32% 
 }
 
-.discordUsername {
+@media only screen and (max-width: 700px) { 
+    .discordUsername { 
+        left: 40%
+    } 
+} 
+
+.twitter { 
     position: absolute;
-    top: 15%;
-    left: 32%
+    top: 80%; 
+    left: 50% !important; 
+    transform: translate(-50%, -50%); 
+    width: 425px; 
 }
 
-.twitter {
-    position: absolute;
-    top: 80%;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-    width: 425px;
-}
+@media only screen and (max-width: 700px) { 
+    .twitter { 
+        left: 50% !important; 
+        width: 330px 
+    } 
+} 
 
-.twitterUsername {
-    position: absolute;
-    top: 15%;
-    left: 32%
-}
+.twitterUsername { 
+    position: absolute; 
+    top: 15%; 
+    left: 32% 
+} 
 
-.twitter a:hover{
-    opacity: 1 !important;
+@media only screen and (max-width: 700px) { 
+    .twitterUsername { 
+        left: 40%
+    } 
+} 
+
+.twitter a:hover{ 
+    opacity: 1 !important; 
 }
