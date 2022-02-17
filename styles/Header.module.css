@@ -6,6 +6,16 @@
   transform: translate(-50%, 0);
 }
 
+@media only screen and (max-width: 700px) {
+  .links{
+  top: 2%;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, 0);
+  width: 200px
+  }
+}
+
 .notice {
   font-size: 1.5vh;
   color: rgb(120, 120, 120);
@@ -13,4 +23,10 @@
   top: 1420%;
   left: 310%;
   width: 350px
+}
+
+@media only screen and (max-width: 700px) {
+  .notice{
+    display: none;
+  }
 }

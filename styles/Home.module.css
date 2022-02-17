@@ -11,6 +11,14 @@
   font-size: 5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .title{
+    top: 25%;
+    left: 5%;
+    font-size: 2.2rem
+  }
+}
+
 .description {
   position: absolute;
   top: 56%;
@@ -18,6 +26,15 @@
   width: 550px;
   transform: translate(0, -50%);
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .description{
+    top: 33%;
+    left: 5%;
+    width: 300px;
+    font-size: 1rem
+  }
 }
 
 .description code { 
@@ -31,6 +48,14 @@
   left: 57%;
   transform: translate(0, -50%);
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .help{
+    top: 95%;
+    left: 5%;
+    width: 400px
+  }
 }
 
 .help a {
@@ -47,14 +72,10 @@
   background-color: transparent
 }
 
-.links {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  font-size: 1.2rem;
-  transform: translate(-50%, 0);
-}
-
-.logo {
-  font-size: 20rem;
+@media only screen and (max-width: 700px) {
+  .imageContainer{
+    top: 65%;
+    left: 10%;
+    width: 40vh !important;
+  }
 }
