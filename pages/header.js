@@ -10,6 +10,7 @@ export default function Header() {
                 <Link href="/contact">Contact</Link>
             </p>
             <p className={styles.notice}>Psst! Try pressing cmd+K or ctrl+K on your keyboard!</p>
+            <p className={styles.credits}>This website was generated with <a href="https://conifer.vercel.app">conifer</a>. 🌲</p>
         </div>
     )
 }

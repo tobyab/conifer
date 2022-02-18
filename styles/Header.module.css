@@ -30,3 +30,23 @@
     display: none;
   }
 }
+
+.credits {
+  font-size: 1.5vh;
+  color: rgb(120, 120, 120);
+  position: absolute;
+  top: 1420%;
+  left: -370%;
+  width: 350px
+}
+
+.credits a {
+  color: rgb(120, 120, 120) !important;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+  .credits {
+    display: none;
+  }
+}
