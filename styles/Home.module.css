@@ -7,7 +7,10 @@
   top: 45%;
   left: 57%;
   transform: translate(0, -50%);
-  width: 750px;
+  width: 80vh;
+  overflow: none;
+  word-break: break-all;
+  white-space: nowrap;
   font-size: 5rem;
 }
 
@@ -15,7 +18,8 @@
   .title{
     top: 25%;
     left: 5%;
-    font-size: 2.2rem
+    font-size: 2.2rem;
+    width: 50vh
   }
 }
 

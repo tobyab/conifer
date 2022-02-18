@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Site kit</title>
+        <title>Contact</title>
         <meta name="description" content="Contact page" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/conifer.png" />
       </Head>
         <Header></Header>
 
