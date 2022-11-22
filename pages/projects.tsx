@@ -1,26 +1,21 @@
 import Header from "../components/header"
-import Image from "next/image"
+import Link from "next/link"
 import Button from "../components/button"
 import Meta from "../components/meta"
 
-function Card({ name, description, image }) {
+function Card({ name, link, description }) {
     return (
-        <div className="flex mb-8 justify-between">
-            <Image
-                src={image}
-                alt={name}
-                height={50}
-                width={50}
-                className="rounded-lg"
-            />
-            <div className="border-b flex ml-4 pb-4">
+        <div>
+            <div className="mb-8 pb-4 border-b flex justify-between">
                 <div>
-                    <h1 className="text-xl mb-2">{name}</h1>
-                    <p className="text-gray-500 text-sm">{description}</p>
+                    <h2 className="text-xl mb-2">{name}</h2>
+                    <p className="text-gray-500 text-sm mr-4">{description}</p>
                 </div>
-                <Button icon="/icons/arrow-up-right.svg">
-                    Check it out!
-                </Button>
+                <Link href={link}>
+                    <Button icon="/icons/arrow-up-right.svg">
+                        Check it out!
+                    </Button>
+                </Link>
             </div>
         </div>
     )
@@ -33,22 +28,21 @@ export default function Projects() {
             <Header/>
             <div className="place-items-center justify-center grid mt-32">
                 <h1 className="text-4xl font-semibold">Projects</h1>
-                <div className="mt-24">
-                    <h2 className="font-medium text-gray-600 mb-2 mt-8">Contact</h2>
+                <div className="mt-24 max-w-xl px-8">
                     <Card
                         name="Project one"
                         description="This is the first of three projects!"
-                        image="/projects/one.svg"
+                        link="#"
                     />
                     <Card
                         name="Project two"
                         description="This is the second of three projects!"
-                        image="/projects/two.svg"
+                        link="#"
                     />
                     <Card
                         name="Project three"
                         description="This is the final project!"
-                        image="/projects/three.svg"
+                        link="#"
                     />
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import Header from "../components/header"
 import Button from "../components/button"
 import Meta from "../components/meta"
+import Link from "next/link"
 
 function Card({ name, link, description, button, icon }) {
     return (
@@ -10,9 +11,11 @@ function Card({ name, link, description, button, icon }) {
                     <h2 className="text-xl mb-2">{name}</h2>
                     <p className="text-gray-500 text-sm">{description}</p>
                 </div>
-                <Button icon={icon} className="">
-                    {button}
-                </Button>
+                <Link href={link}>
+                    <Button icon={icon} className="">
+                        {button}
+                    </Button>
+                </Link>
             </div>
         </div>
     )
@@ -25,7 +28,7 @@ export default function About() {
             <Header/>
             <div className="place-items-center justify-center grid mt-32">
                 <h1 className="text-4xl font-semibold">About me</h1>
-                <div className="mt-24 w-1/4">
+                <div className="mt-24 max-w-xl px-8">
                     <h2 className="font-medium text-gray-600 mb-2">Who am I?</h2>
                     <p className="text-xl">
                         Nulla non sit laboris voluptate amet consectetur.
