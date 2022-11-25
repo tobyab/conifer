@@ -1,3 +1,4 @@
+import type { NextPage } from "next"
 import Header from "../components/header"
 import Button from "../components/button"
 import Meta from "../components/meta"
@@ -21,12 +22,12 @@ function Card({ name, link, description, button, icon }) {
     )
 }
 
-export default function About() {
+const About: NextPage = () => {
     return (
         <div>
             <Meta/>
             <Header/>
-            <div className="place-items-center justify-center grid mt-32">
+            <div className="place-items-center justify-center grid mt-32 mb-16">
                 <h1 className="text-4xl font-semibold">About me</h1>
                 <div className="mt-24 max-w-xl px-8">
                     <h2 className="font-medium text-gray-600 mb-2">Who am I?</h2>
@@ -72,3 +73,5 @@ export default function About() {
         </div>
     )
 }
+
+export default About

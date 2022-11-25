@@ -1,5 +1,4 @@
 import type { NextPage } from "next"
-import Head from "next/head"
 import Image from "next/image"
 import Header from "../components/header"
 import Meta from "../components/meta"
@@ -11,11 +10,7 @@ const Home: NextPage = () => {
       <div>
           <Meta/>
           <Header/>
-          <div className="mt-64 place-items-center justify-center md:grid mx-4">
-              <Head>
-                <title>Conifer</title>
-                <meta name="description" content="A personal website generated from Conifer!" />
-              </Head>
+          <div className="mt-64 place-items-center justify-center md:grid mx-4 mb-16">
               <div className="md:flex gap-x-20">
                 <div className="self-center mb-8">
                     <h1 className="text-4xl font-semibold">Welcome to Conifer!</h1>

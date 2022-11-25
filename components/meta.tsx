@@ -1,11 +1,10 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 
-export default function Meta({ href }: any) {
+export default function Meta() {
     const router = useRouter()
-    const active = router.asPath === href
     const meta = {
-        title: "Conifer",
+        title: `${router.pathname === "/" ? "" : ` ${router.pathname} |`} Conifer`,
         description: "A personal website generated from Conifer!",
         image: "http://localhost:3000/hero.png",
         type: "website"
